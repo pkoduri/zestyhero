@@ -1,0 +1,73 @@
+# Redirects and rewrites for Zenflow Clinical Website
+# This file tells Render how to handle routing for the static site
+
+# Serve the main page for all routes (SPA-style routing)
+/*    /index.html   200
+
+# Section-specific redirects for better SEO and bookmarking
+/clinical-data      /index.html#clinical-data      200
+/clinical           /index.html#clinical-data      200
+/data               /index.html#clinical-data      200
+
+/value-analysis     /index.html#value-analysis     200
+/value              /index.html#value-analysis     200
+/economics          /index.html#value-analysis     200
+/economic           /index.html#value-analysis     200
+
+/comparison         /index.html#comparison         200
+/compare            /index.html#comparison         200
+/competitive        /index.html#comparison         200
+
+/calculator         /index.html#calculator         200
+/calc               /index.html#calculator         200
+/economic-calculator /index.html#calculator        200
+/cost-calculator    /index.html#calculator         200
+
+/evidence           /index.html#evidence           200
+/clinical-evidence  /index.html#evidence           200
+/publications       /index.html#evidence           200
+/studies            /index.html#evidence           200
+
+# Legacy redirects (in case of old URLs)
+/home               /index.html                    301
+/main               /index.html                    301
+
+# Asset protection (prevent direct access to config files)
+/.env               /index.html                    404
+/.git/*             /index.html                    404
+/package.json       /index.html                    404
+
+# Force HTTPS (if custom domain is used)
+https://zenflow-clinical.com/* https://zenflow-clinical.com/:splat 301!
+
+# Cache headers for static assets (optional performance optimization)
+/assets/*           /assets/:splat                 200
+  Cache-Control: public, max-age=31536000
+
+# Specific file type handling
+*.css               /:splat                        200
+  Content-Type: text/css
+  Cache-Control: public, max-age=31536000
+
+*.js                /:splat                        200
+  Content-Type: application/javascript
+  Cache-Control: public, max-age=31536000
+
+*.png               /:splat                        200
+  Content-Type: image/png
+  Cache-Control: public, max-age=31536000
+
+*.jpg               /:splat                        200
+  Content-Type: image/jpeg
+  Cache-Control: public, max-age=31536000
+
+*.svg               /:splat                        200
+  Content-Type: image/svg+xml
+  Cache-Control: public, max-age=31536000
+
+# Security headers
+/*    /index.html   200
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin

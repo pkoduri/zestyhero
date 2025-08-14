@@ -1,0 +1,63 @@
+{
+  "name": "zenflow-clinical-website",
+  "version": "1.0.0",
+  "description": "Professional website showcasing Zenflow Spring System clinical data and economic value analysis for healthcare professionals",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve . -l 3000",
+    "dev": "serve . -l 3000 --cors",
+    "build": "echo 'Static site - no build step required'",
+    "test": "echo 'No tests specified'",
+    "validate": "html-validate index.html",
+    "deploy": "echo 'Deploy to Render via Git push'"
+  },
+  "keywords": [
+    "zenflow",
+    "bph",
+    "benign-prostatic-hyperplasia",
+    "clinical-data",
+    "medical-device",
+    "urology",
+    "healthcare",
+    "spring-system",
+    "value-analysis",
+    "economic-calculator",
+    "qaly",
+    "clinical-evidence"
+  ],
+  "author": {
+    "name": "Zenflow Medical",
+    "url": "https://zenflow.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenflow/zenflow-clinical-website.git"
+  },
+  "homepage": "https://zenflow-clinical.onrender.com",
+  "bugs": {
+    "url": "https://github.com/zenflow/zenflow-clinical-website/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {
+    "serve": "^14.0.0",
+    "html-validate": "^8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "config": {
+    "port": 3000
+  },
+  "private": false,
+  "funding": {
+    "type": "commercial",
+    "url": "https://zenflow.com/contact"
+  }
+}

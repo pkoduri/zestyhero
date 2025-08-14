@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenflow Spring System - Clinical Excellence & Value Evidence</title>
+    
+    <!-- External Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">Zenflow</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#clinical-data" class="nav-link">Clinical Data</a></li>
+                    <li><a href="#value-analysis" class="nav-link">Value Analysis</a></li>
+                    <li><a href="#comparison" class="nav-link">Comparison</a></li>
+                    <li><a href="#calculator" class="nav-link">Calculator</a></li>
+                    <li><a href="#evidence" class="nav-link">Evidence</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Zenflow Spring System</h1>
+            <p class="hero-subtitle">Revolutionary BPH therapy delivering immediate relief with superior clinical outcomes and proven economic value</p>
+            <div class="cta-buttons">
+                <a href="#clinical-data" class="btn btn-primary">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M3 3v18h18"/>
+                        <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                    </svg>
+                    View Clinical Data
+                </a>
+                <a href="#calculator" class="btn btn-secondary">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <rect x="7" y="7" width="3" height="3"/>
+                        <rect x="14" y="7" width="3" height="3"/>
+                        <rect x="7" y="14" width="10" height="3"/>
+                    </svg>
+                    Economic Calculator
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">Patients Treated</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">46%</div>
+                    <div class="stat-label">IPSS Improvement</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0%</div>
+                    <div class="stat-label">Sexual Dysfunction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">&lt;4%</div>
+                    <div class="stat-label">Retreatment Rate</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Gentle</h3>
+                    <p class="feature-description">No burning, cutting, or piercing of tissue with minimal bleeding.</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <path d="M12 17h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Effective</h3>
+                    <p class="feature-description">Long-term benefits and lasting symptom relief with proven durability.</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Fast Recovery</h3>
+                    <p class="feature-description">Most patients recover within hours, not weeks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clinical-data" class="section">
+        <div class="container">
+            <h2 class="section-title">Clinical Superiority</h2>
+            <p class="section-subtitle">Proven efficacy with exceptional safety profile and patient satisfaction</p>
+            
+            <div class="grid grid-3">
+                <div class="metric fade-in">
+                    <div class="metric-value">46%</div>
+                    <div class="metric-label">IPSS Improvement at 12 Months</div>
+                </div>
+                <div class="metric fade-in">
+                    <div class="metric-value">0%</div>
+                    <div class="metric-label">Sexual Dysfunction Rate</div>
+                </div>
+                <div class="metric fade-in">
+                    <div class="metric-value">&lt;4%</div>
+                    <div class="metric-label">Retreatment Rate</div>
+                </div>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card fade-in">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                        BREEZE Trial Results
+                    </h3>
+                    <p>205-patient randomized controlled trial with sham control demonstrating significant and sustained symptom improvement:</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; color: #64748b;">
+                        <li>12-15 point IPSS reduction at 1 year</li>
+                        <li>5-8 mL/s Qmax flow rate increase</li>
+                        <li>No negative impact on sexual function</li>
+                        <li>Immediate symptom relief post-procedure</li>
+                        <li>Sustained efficacy through 3+ years</li>
+                    </ul>
+                </div>
+                <div class="card fade-in">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        Safety Profile
+                    </h3>
+                    <p>Exceptional safety with minimal adverse events:</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; color: #64748b;">
+                        <li>Near-zero incidence of encrustation</li>
+                        <li>&lt;1% device migration rate</li>
+                        <li>No post-procedure catheter required in most cases</li>
+                        <li>Reversible procedure - device can be removed</li>
+                        <li>No tissue destruction or thermal injury</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-container fade-in">
+                <canvas id="efficacyChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="value-analysis" class="section">
+        <div class="container">
+            <h2 class="section-title">Economic Value Analysis</h2>
+            <p class="section-subtitle">Proven cost-effectiveness with superior health economic outcomes</p>
+            
+            <div class="grid grid-2">
+                <div class="card fade-in">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                        Cost Savings
+                    </h3>
+                    <div class="metric">
+                        <div class="metric-value">$500</div>
+                        <div class="metric-label">Savings per patient over 5 years vs UroLift</div>
+                    </div>
+                    <p>Lower retreatment rates and reduced complications lead to significant downstream cost savings for payers and health systems.</p>
+                </div>
+                <div class="card fade-in">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                        Medication Offset
+                    </h3>
+                    <div class="metric">
+                        <div class="metric-value">$3,000-$5,000</div>
+                        <div class="metric-label">5-year medication cost savings</div>
+                    </div>
+                    <p>Durable symptom relief reduces reliance on lifelong BPH medications, creating substantial value for payers.</p>
+                </div>
+            </div>
+
+            <div class="card fade-in">
+                <h3>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M3 3v18h18"/>
+                        <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                    </svg>
+                    Quality-Adjusted Life Years (QALYs)
+                </h3>
+                <p>Health economic modeling demonstrates superior QALY gains compared to standard of care:</p>
+                <div class="chart-container">
+                    <canvas id="qalyChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison" class="section">
+        <div class="container">
+            <h2 class="section-title">Competitive Comparison</h2>
+            <p class="section-subtitle">How Zenflow Spring System compares to leading BPH therapies</p>
+            
+            <table class="comparison-table fade-in">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>
+                            <svg class="icon" viewBox="0 0 24 24" style="display: inline; width: 16px; height: 16px; margin-right: 0.5rem;">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <path d="M12 17h.01"/>
+                            </svg>
+                            Zenflow Spring
+                        </th>
+                        <th>UroLift</th>
+                        <th>Rezūm</th>
+                        <th>Medical Management</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IPSS Improvement</strong></td>
+                        <td><span class="highlight">12-15 points</span></td>
+                        <td>11-13 points</td>
+                        <td>11+ points</td>
+                        <td>3-6 points</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Qmax Increase</strong></td>
+                        <td><span class="highlight">5-8 mL/s</span></td>
+                        <td>4-6 mL/s</td>
+                        <td>5-7 mL/s</td>
+                        <td>1-3 mL/s</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sexual Function</strong></td>
+                        <td><span class="highlight">Preserved/Improved</span></td>
+                        <td>Preserved</td>
+                        <td>Mostly Preserved</td>
+                        <td>Often Impaired</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Retreatment Rate (5yr)</strong></td>
+                        <td><span class="highlight">&lt;4%</span></td>
+                        <td>13.6%</td>
+                        <td>4.4% (2yr)</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Immediate Relief</strong></td>
+                        <td><span class="highlight">Yes</span></td>
+                        <td>Yes</td>
+                        <td>No (weeks)</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reversibility</strong></td>
+                        <td><span class="highlight">Yes</span></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Capital Equipment</strong></td>
+                        <td><span class="highlight">None Required</span></td>
+                        <td>None Required</td>
+                        <td>Required ($100k+)</td>
+                        <td>None</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="calculator" class="section">
+        <div class="container">
+            <h2 class="section-title">Economic Impact Calculator</h2>
+            <p class="section-subtitle">Calculate the economic benefits of implementing Zenflow in your practice</p>
+            
+            <div class="calculator fade-in">
+                <h3>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <rect x="7" y="7" width="3" height="3"/>
+                        <rect x="14" y="7" width="3" height="3"/>
+                        <rect x="7" y="14" width="10" height="3"/>
+                    </svg>
+                    BPH Treatment Cost Comparison Calculator
+                </h3>
+                <div class="grid grid-2">
+                    <div>
+                        <div class="input-group">
+                            <label>
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                                </svg>
+                                Number of BPH Procedures per Year:
+                            </label>
+                            <input type="number" id="procedures" value="100" min="1">
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                                Current Primary Treatment:
+                            </label>
+                            <select id="treatment">
+                                <option value="urolift">UroLift</option>
+                                <option value="rezum">Rezūm</option>
+                                <option value="medical">Medical Management</option>
+                                <option value="turp">TURP</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                Average Patient Age:
+                            </label>
+                            <input type="number" id="age" value="68" min="50" max="90">
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateSavings()" style="width: 100%; margin-top: 1.5rem;">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            Calculate Savings
+                        </button>
+                    </div>
+                    <div class="result-box">
+                        <h4>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <path d="M12 17h.01"/>
+                            </svg>
+                            Economic Impact Results
+                        </h4>
+                        <div id="results">
+                            <p style="color: #64748b;">Enter parameters and click Calculate Savings to see your economic impact analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="evidence" class="section">
+        <div class="container">
+            <h2 class="section-title">Clinical Evidence</h2>
+            <p class="section-subtitle">Comprehensive peer-reviewed publications and real-world evidence</p>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                        BREEZE Pivotal Trial
+                    </h3>
+                    <p><strong>Journal of Urology (2025)</strong></p>
+                    <p style="color: #64748b;">205-patient RCT demonstrating superior efficacy and safety vs sham control. Primary endpoints met with statistical significance.</p>
+                </div>
+                <div class="card fade-in">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M3 3v18h18"/>
+                            <path d="M7 12l3 3 7-7"/>
+                        </svg>
+                        ZEST Long-term Follow-up
+                    </h3>
+                    <p><strong>European Urology (2024)</strong></p>
+                    <p style="color: #64748b;">3+ year durability data showing sustained symptom relief and low retreatment rates in pilot study cohort.</p>
+                </div>
+                <div class="card fade-in">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        Health Economics Analysis
+                    </h3>
+                    <p><strong>Urology Practice (2025)</strong></p>
+                    <p style="color: #64748b;">Cost-effectiveness analysis demonstrating favorable cost-per-QALY compared to standard BPH treatments.</p>
+                </div>
+            </div>
+
+            <div class="testimonial fade-in">
+                <p class="testimonial-text">"The Zenflow Spring System represents a paradigm shift in BPH treatment - combining the immediate relief of UroLift with superior durability and the unique advantage of reversibility."</p>
+                <p class="testimonial-author">Dr. Michael Chancellor</p>
+                <p class="testimonial-title">Leading Urologist & Clinical Investigator</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Zenflow. All rights reserved. For professional use only.</p>
+            <p class="footer-disclaimer">The Zenflow Spring System is an investigational device. Not yet available for commercial use.</p>
+        </div>
+    </footer>
+
+    <!-- Local JavaScript -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
